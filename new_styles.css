@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#map {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.questionbar {
+    position: fixed;
+    top: 30px;
+    /* You can change this to top: 20px; to float at the top */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4A90E2;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* Ensure the bar is on top of other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-bar p {
+    margin: 0;
+    padding-right: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Post-game styles */
+#post-game {
+    display: none;
+}
+
+/* Feedback text */
+#feedback {
+    font-weight: bold;
+    color: green;
+}
+
+/* Controls visibility */
+#game-on {
+    display: none;
+}
+
+#post-game {
+    display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_styles.css">
+    <title>Pin Dropping Game</title>
+    <script src="data/stateBoundary.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div id="game-on">
+                <h2>Instructions</h2>
+                <p>Drop a pin on the correct location. Click on the map to place your pin!</p>
+                <div class="questionbar" id="question-bar">
+                    <p id="location-name"> <span id="current-location"></span></p>
+                </div>
+                <button id="giveup">Give Up</button>
+            </div>
+            <div id="pre-game">
+                <p>A click an mark exercise to revise locations of national parks in india. <br> After exercise ends a stat of state accuracy and distance accuracy will be shown</p>
+                <select id="data-source" onchange="updateDataSource()">
+                    <option value="biosphere" selected>Biosphere Reserve</option>
+                    <option value="national_parks" >National Parks</option>
+                    <option value="indian_cities">Indian Cities</option>
+                </select>
+                <button id="start-exercise">Start Exercise</button>
+            </div>
+            <div id="post-game">
+                <p id="state-accuracy-display"></p>
+                <p id="distance-accuracy-display"></p>
+                <button id="restart">Restart Exercise</button>
+                <button id="toMenu">Menu</button>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+        </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="data/biosphere.js"></script> <!-- Include data -->
+    <script src="data/nationalpark.js"></script> <!-- Include data -->
+    <script src="data/city.js"></script> <!-- Include data -->
+    <script src="assitant.js"></script>
+    <script src="new_script.js"></script>
+</body>
+
+</html>
