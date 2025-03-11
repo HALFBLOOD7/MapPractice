@@ -1,12 +1,13 @@
 //collect data
 let currentDataSource = 0;
-let data = [biosphereReserves, indianCities, nationalParks];
+let data = [biosphereReserves, indianCities, nationalParks,tigerReserves];
 let locations = data[currentDataSource];
 //variables defined
 let icons_loc = [
   "data/icons/biosphere3.png",
   "data/icons/city3.png",
   "data/icons/nature.png",
+  "data/icons/nature.png"
 ];
 let randomLocations = shuffledArray(locations.length);
 let state_accuracy = 0;
