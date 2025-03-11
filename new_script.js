@@ -217,6 +217,9 @@ function updateDataSource() {
     case "national_parks":
       currentDataSource = 2;
       break;
+    case "tiger_reserves":
+      currentDataSource = 3;
+      break;
     default:
       currentDataSource = 0;
       break;
